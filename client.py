@@ -66,7 +66,7 @@ def connect_to_server():
         task_data = s.recv(1024).decode('utf-8')
         task = json.loads(task_data)
         print("Received task from server")
-
+ 
         # Execute the task and get the result
         result = run_task(task)
         print("Task executed, sending result back")
